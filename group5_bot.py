@@ -17,6 +17,10 @@ client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
 BOT_ID =  client.api_call('auth.test')['user_id']
 
+@app.route('/')
+def hello():
+    return "Hello World!"
+    
 @slack_event_adapter.on('message')
 def message(payload):
     #print(payload)
