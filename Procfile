@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn group5-bot-v1:app
