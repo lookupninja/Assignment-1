@@ -48,6 +48,3 @@ def message(payload):
             client.chat_postMessage(channel=channel_id, text=output)
         else:
             client.chat_postMessage(channel=channel_id, text=text2)
-
-if __name__ == '__main__':
-    app.run()
