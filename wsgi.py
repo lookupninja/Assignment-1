@@ -1,4 +1,4 @@
-from app.group5_bot import app
+from group5_bot import app
 
 if __name__ == "__main__":
   app.run()
