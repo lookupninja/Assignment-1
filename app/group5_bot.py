@@ -7,7 +7,7 @@ from slackeventsapi import SlackEventAdapter
 import requests
 import json
 
-env_path = Path('.') / '.env'
+env_path = Path('.') / './.env'
 load_dotenv(dotenv_path=env_path)
 
 app = Flask(__name__)
