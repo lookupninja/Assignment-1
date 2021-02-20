@@ -19,7 +19,7 @@ BOT_ID =  client.api_call('auth.test')['user_id']
 
 @app.route('/')
 def hello():
-    return "Hello World!"
+    return "Dyno Up and Runnig..."
     
 @slack_event_adapter.on('message')
 def message(payload):
