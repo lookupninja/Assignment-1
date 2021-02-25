@@ -24,8 +24,8 @@ def wakeup():
 # extract and process user message    
 @slack_event_adapter.on('message')
 def message(payload):
-    channel_id = event.get('channel')    
     event = payload.get('event',{})
+    channel_id = event.get('channel')     
     user_id = event.get('user')
     input_text = event.get('text')
 
